@@ -35,7 +35,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define CLICK_REPORT_SIZE 5
-uint8_t click_report[CLICK_REPORT_SIZE] = {0};
+uint8_t mouse_report[CLICK_REPORT_SIZE] = {0};
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -98,11 +98,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    click_report[3] = (-1); // send scroll 
-    USBD_HID_SendReport(&hUsbDeviceFS, click_report, CLICK_REPORT_SIZE);
+    mouse_report[3] = (-1); // send scroll 
+    USBD_HID_SendReport(&hUsbDeviceFS, mouse_report, CLICK_REPORT_SIZE);
     HAL_Delay(50);
-    click_report[3] = 0; // send scroll release
-    USBD_HID_SendReport(&hUsbDeviceFS, click_report, CLICK_REPORT_SIZE);
+    mouse_report[3] = 0; // send scroll release
+    USBD_HID_SendReport(&hUsbDeviceFS, mouse_report, CLICK_REPORT_SIZE);
     HAL_Delay(50);
     /* USER CODE END WHILE */
 
