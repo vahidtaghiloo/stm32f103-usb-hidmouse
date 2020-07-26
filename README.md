@@ -3,12 +3,12 @@ stm32f103 HAL usb hid mouse
 
 ## mouse-report[5]
 
-|        | bit8 | bit7 | bit6 | bit5 | bit4 | bit3 | bit2 | bit1 | bit0 |
-| :----: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| byte0  | - | - | - | - | - | - | MB | RB | LB |
-| byte1  | X | X | X | X | X | X | X | X |
-| byte2  | Y | Y | Y | Y | Y | Y | Y | Y |
-| byte3  | - | - | - | WS | WS | WS | WS | WS |
+|        | bit7 | bit6 | bit5 | bit4 | bit3 | bit2 | bit1 | bit0 |
+| :----: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| byte0  | - | - | - | - | - | MB | RB | LB |
+| byte1  | X | X | X | X | X | X | X |
+| byte2  | Y | Y | Y | Y | Y | Y | Y |
+| byte3  | - | - | WS | WS | WS | WS | WS |
 | byte4  | - | - | - | - | - | - | MW | MW |
 
 LB = Left   Button
