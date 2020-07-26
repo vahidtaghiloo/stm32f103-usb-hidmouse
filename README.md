@@ -12,9 +12,13 @@ stm32f103 HAL usb hid mouse
 | byte4  | - | - | - | - | - | - | MW | MW |
 
 LB = Left   Button
+
 RB = Right  Button
+
 MB = Middle Button
+
 WS = Wheel Scroll
+
 MW = Motion Wakeup
 
 
